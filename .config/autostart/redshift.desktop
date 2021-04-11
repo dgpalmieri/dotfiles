@@ -1,0 +1,4 @@
+[redshift]
+Type=Application
+Name=Redshift
+Exec="$(redshift)"

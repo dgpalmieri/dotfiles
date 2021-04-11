@@ -1,0 +1,2 @@
+# Don't add a newline at the beginning of each prompt
+add_newline = false

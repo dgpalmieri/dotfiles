@@ -1,0 +1,27 @@
+# Environment Variables
+
+## Classes
+
+## gpg interface
+    export GPG_TTY=$(tty)
+
+## Sway
+    export SWAYCONFIG=~/.config/sway/config
+
+## Starship config
+    export STARSHIP_CONFIG=/home/dgpalmieri/.config/starship/starship.toml
+
+## qutebrowser screen sharing (someday)
+    export XDG_CURRENT_DESKTOP=sway
+    export XDG_SESSION_TYPE=wayland
+    export RTC_USE_PIPEWIRE=true
+
+## Add firefox wayland flag
+    export MOZ_ENABLE_WAYLAND=1
+
+## Add local bin to my $PATH
+    export PATH=$PATH:/home/dgpalmieri/.local/bin
+
+
+## After setting envs, import them into the system environment
+systemctl --user import-environment GPG_TTY SWAYCONFIG STARSHIP_CONFIG XDG_CURRENT_DESKTOP XDG_SESSION_TYPE RTC_USE_PIPEWIRE MOZ_ENABLE_WAYLAND PATH

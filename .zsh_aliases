@@ -1,0 +1,32 @@
+# Aliases
+## Colors
+alias grep='grep --color=auto'
+alias diff='diff --color=auto'
+alias ls='ls --color=auto'
+
+## Light
+alias light+='sudo light -A'
+alias light-='sudo light -U'
+
+## Workflow
+alias mkdir='mkdir -p -v'
+alias update='sudo pacman -Syu'
+alias gfix='git commit -a --fixup'
+alias svim='sudo nvim'
+alias cpdir='rsync -ah --info=progress2'
+alias ls='exa'
+alias ll='ls -alh'
+alias dsk='sudo fdisk -l'
+alias cat='bat'
+
+## Exiting convenience
+alias :q='exit'
+alias reboot='sudo reboot'
+alias shutdown='sudo shutdown now'
+
+## Python Virtual Environments
+alias ve='python3 -m virtualenv ./venv'
+alias va='source ./venv/bin/activate'
+
+## Others
+alias :w='echo "This isn'"'"'t neovim, you absolute fucking donkey"'

@@ -1,0 +1,14 @@
+[user]
+	email = dgpalmieri@gmail.com
+	name = Dylan Palmieri
+	signingkey = DAEFA4AC44D0E195
+[commit]
+	gpgsign = true
+[credential]
+	helper = store
+[core]
+	editor = nvim
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
