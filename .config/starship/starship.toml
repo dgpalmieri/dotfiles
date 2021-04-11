@@ -1,2 +1,7 @@
 # Don't add a newline at the beginning of each prompt
 add_newline = false
+
+# Show git remotes
+[git_branch]
+always_show_remote = true
+format = "on [$symbol$remote_name/$branch]($style) "
