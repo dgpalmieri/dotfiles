@@ -1,10 +1,29 @@
 ## Directories
-    ~/AUR
-    ~/Desktop
-    ~/Documents
-    ~/Downloads
-    ~/Pictures
-    ~/Scripts
-    ~/rtorrent
+
+AUR/
+Desktop/
+Documents/
+Downloads/
+Pictures/
+Scripts/
+rtorrent/
+
+.config/nvim/autoload/
+.config/nvim/plugged/
+.config/pulse/
+
+.cache/
+.cargo/
+.gnupg/
+.local/
+.mozilla/
+.pki/
+.zsh-plugins/
 
 ## Files
+
+.config/mimeapps.list
+.git-credentials
+.histfile
+.lesshst
+.zcompdump
