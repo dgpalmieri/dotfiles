@@ -36,7 +36,9 @@ let g:ycm_python_binary_path = '/bin/python3.9'
 
 " Remap <esc> to jk
 inoremap jk <Esc>
-inoremap JK <Esc>
+
+" change gutter background color to make sense
+highlight clear SignColumn
 
 set number
 set tabstop=4
