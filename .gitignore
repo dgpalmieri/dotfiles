@@ -27,3 +27,4 @@ rtorrent/
 .histfile
 .lesshst
 .zcompdump
+.python_history
