@@ -5,10 +5,12 @@
 [commit]
 	gpgsign = true
 [credential]
-	helper = store
+	helper = cache
 [core]
 	editor = nvim
 [pull]
 	rebase = false
 [init]
 	defaultBranch = main
+[gpg]
+	program = gpg
