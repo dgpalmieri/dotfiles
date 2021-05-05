@@ -1,7 +1,6 @@
 [user]
 	email = dgpalmieri@gmail.com
 	name = Dylan Palmieri
-	signingkey = DAEFA4AC44D0E195
 [commit]
 	gpgsign = true
 [credential]
@@ -14,3 +13,5 @@
 	defaultBranch = main
 [gpg]
 	program = gpg
+[filter "gitignore"]
+	clean = "sed '/#gitignore$/d'"
