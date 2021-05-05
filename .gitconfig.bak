@@ -1,6 +1,7 @@
 [user]
 	email = dgpalmieri@gmail.com
 	name = Dylan Palmieri
+	signingkey = B5BA13A9
 [commit]
 	gpgsign = true
 [credential]
