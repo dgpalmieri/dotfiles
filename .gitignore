@@ -30,6 +30,7 @@ rtorrent/
 
 .config/mimeapps.list
 .git-credentials
+.gitconfig
 .histfile
 .lesshst
 .zcompdump
