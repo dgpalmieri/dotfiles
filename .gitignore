@@ -26,6 +26,18 @@ rtorrent/
 .pki/
 .zsh-plugins/
 
+.chef/
+.chef-workstation/
+.config/gcloud/
+.dokken/
+.terraform.d/
+
+## Repos
+
+chef-repo/
+dca-ig-rapidwhale/
+emrd_tools/
+
 ## Files
 
 .config/mimeapps.list
