@@ -13,10 +13,6 @@
 # End of lines added by compinstall
 
 # Actions to perform on startup
-    # Start Sway
-    if [ "$(tty)" = "/dev/tty1" ]; then
-        exec sway
-    fi
 
     ## Initialize zsh_aliases
     if [ -e $HOME/.zsh_aliases ]; then
@@ -38,3 +34,6 @@
 
     ## Activate starship prompt
     eval "$(starship init zsh)"
+
+    ## Activate chef
+    eval "$(chef shell-init zsh)"
