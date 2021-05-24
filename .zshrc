@@ -23,6 +23,7 @@
     if [ -e $HOME/.zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
         source $HOME/.zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
     fi
+    ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 
     ## Initialize zsh_envs
     if [ -e $HOME/.zsh_envs ]; then
