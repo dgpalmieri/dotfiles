@@ -40,6 +40,9 @@ inoremap jk <Esc>
 " change gutter background color to make sense
 highlight clear SignColumn
 
+" highlight columns 60, 80, and 120
+set colorcolumn=60,80,120
+
 set number
 set tabstop=4
 set shiftwidth=4
