@@ -32,6 +32,9 @@ rtorrent/
 .dokken/
 .terraform.d/
 
+.config/thefuck/__pycache__/
+.pylint.d/
+
 ## Repos
 
 chef-repo/
