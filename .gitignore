@@ -11,13 +11,9 @@ rtorrent/
 .config/nvim/autoload/
 .config/nvim/plugged/
 .config/pulse/
+.config/thefuck/__pycache__/
 
-.dotnet/
-.landscape/
 .ssh/
-.vscode-server/
-
-
 .cache/
 .cargo/
 .gnupg/
@@ -35,9 +31,3 @@ rtorrent/
 .lesshst
 .zcompdump
 .python_history
-
-.motd_shown
-.profile
-.sudo_as_admin_successful
-.viminfo
-.wget-hsts
