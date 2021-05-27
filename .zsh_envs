@@ -8,8 +8,9 @@
 ## Starship config
     export STARSHIP_CONFIG=/home/dgpalmieri/.config/starship/starship.toml
 
-## Add local bin to my $PATH
+## Add local bin and cargo bin to my $PATH
     export PATH=$PATH:/home/dgpalmieri/.local/bin
+    export PATH=$PATH:/home/dgpalmieri/.cargo/bin
 
 ## Add docker completion to $fpath
     export fpath=(~/.zsh-plugins/completions $fpath)
