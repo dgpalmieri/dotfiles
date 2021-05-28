@@ -34,8 +34,6 @@ syntax enable
 set background=dark
 colorscheme solarized
 
-let g:ycm_python_binary_path = '/bin/python3.9'
-
 " Remap <esc> to jk
 inoremap jk <Esc>
 
