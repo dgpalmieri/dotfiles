@@ -1,23 +1,11 @@
 ## Directories
-
-AUR/
-Desktop/
-Documents/
-Downloads/
-Pictures/
-Scripts/
-rtorrent/
-
 .config/nvim/autoload/
 .config/nvim/plugged/
 .config/pulse/
-
 .dotnet/
 .landscape/
 .ssh/
 .vscode-server/
-
-
 .cache/
 .cargo/
 .gnupg/
@@ -25,13 +13,11 @@ rtorrent/
 .mozilla/
 .pki/
 .zsh-plugins/
-
 .chef/
 .chef-workstation/
 .config/gcloud/
 .dokken/
 .terraform.d/
-
 .config/thefuck/__pycache__/
 .pylint.d/
 
@@ -40,6 +26,7 @@ rtorrent/
 chef-repo/
 dca-ig-rapidwhale/
 emrd_tools/
+workstation_setup_docs/
 
 ## Files
 
@@ -50,7 +37,6 @@ emrd_tools/
 .lesshst
 .zcompdump
 .python_history
-
 .motd_shown
 .profile
 .sudo_as_admin_successful
