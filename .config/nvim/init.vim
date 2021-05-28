@@ -19,6 +19,8 @@ Plug 'sheerun/vim-polyglot'
 Plug 'valloric/youcompleteme'
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 
+Plug 'dense-analysis/ale'
+
 Plug 'airblade/vim-gitgutter'
 set updatetime=100
 
