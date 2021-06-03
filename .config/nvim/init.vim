@@ -41,7 +41,7 @@ inoremap jk <Esc>
 highlight clear SignColumn
 
 " highlight columns 60, 80, and 120
-set colorcolumn=60,80,120
+set colorcolumn=60,80,100,120
 
 set number
 set tabstop=4
