@@ -16,10 +16,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'sheerun/vim-polyglot'
 
-Plug 'valloric/youcompleteme'
-Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
-
-Plug 'dense-analysis/ale'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'airblade/vim-gitgutter'
 set updatetime=100
@@ -36,6 +33,10 @@ colorscheme solarized
 
 " Remap <esc> to jk
 inoremap jk <Esc>
+
+" Remap tab and s-tab to interact with CoC
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 " change gutter background color to make sense
 highlight clear SignColumn
