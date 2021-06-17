@@ -38,5 +38,3 @@
 .sudo_as_admin_successful
 .viminfo
 .wget-hsts
-collected_data*
-data.tar.gz
