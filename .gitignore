@@ -20,13 +20,9 @@
 .terraform.d/
 .config/thefuck/__pycache__/
 .pylint.d/
-
-## Repos
-
-chef-repo/
-dca-ig-rapidwhale/
-emrd_tools/
-workstation_setup_docs/
+.ipython/
+.jupyter/
+.npm/
 
 ## Files
 
@@ -42,3 +38,5 @@ workstation_setup_docs/
 .sudo_as_admin_successful
 .viminfo
 .wget-hsts
+collected_data*
+data.tar.gz
