@@ -19,10 +19,11 @@
         source $HOME/.zsh_aliases
     fi
 
-    ## Initialize zsh-autosuggestions
-    if [ -e $HOME/.zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
-        source $HOME/.zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-    fi
+    ## Initialize zsh plugins
+    for f in ./.zsh-plugins/*; do
+        dirname="${f:14}"
+        source "$f$dirname.zsh"
+    done
     ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 
     ## Initialize zsh_envs
