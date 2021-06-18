@@ -49,3 +49,6 @@
 
     ## Activate chef
     eval "$(chef shell-init zsh)"
+
+    ## Activate zoxide
+    eval "$(zoxide init zsh)"
