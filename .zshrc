@@ -14,6 +14,9 @@
 
 # Actions to perform on startup
 
+    ## Alias 'jk' to 'esc' in zsh vim line mode
+    bindkey -M viins 'jk' vi-cmd-mode
+
     ## Initialize zsh_aliases
     if [ -e $HOME/.zsh_aliases ]; then
         source $HOME/.zsh_aliases
