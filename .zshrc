@@ -29,6 +29,11 @@
     done
     ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 
+    ## Initialize zsh completions
+    for f in ./.zsh-plugins/completions/*; do
+        source "$f"
+    done
+
     ## Initialize zsh_envs
     if [ -e $HOME/.zsh_envs ]; then
         source $HOME/.zsh_envs
