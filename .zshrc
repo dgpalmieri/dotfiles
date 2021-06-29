@@ -25,6 +25,9 @@
     ## Initialize zsh plugins
     for f in ./.zsh-plugins/*; do
         dirname="${f:14}"
+        if [[ $dirname = '/completions' ]]; then
+            continue
+        fi
         source "$f$dirname.zsh"
     done
     ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
