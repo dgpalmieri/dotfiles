@@ -23,7 +23,7 @@
     fi
 
     ## Initialize zsh plugins
-    for f in ./.zsh-plugins/*; do
+    for f in ./.zsh_plugins/*; do
         dirname="${f:14}"
         if [[ $dirname = '/completions' ]]; then
             continue
@@ -33,7 +33,7 @@
     ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 
     ## Initialize zsh completions
-    for f in ./.zsh-plugins/completions/*; do
+    for f in ./.zsh_plugins/completions/*; do
         source "$f"
     done
 
