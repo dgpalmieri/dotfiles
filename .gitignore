@@ -14,7 +14,7 @@
 .local/
 .mozilla/
 .pki/
-.zsh-plugins/
+.zsh_plugins/
 .chef/
 .chef-workstation/
 .config/gcloud/
