@@ -2,6 +2,8 @@
 .config/nvim/autoload/
 .config/nvim/plugged/
 .config/pulse/
+.config/coc/
+.config/configstore/
 .dotnet/
 .landscape/
 .ssh/
