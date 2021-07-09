@@ -21,6 +21,7 @@
 
 ## Add local bin to my $PATH
     export PATH=$PATH:/home/dgpalmieri/.local/bin
+    export PATH=$PATH:/home/dgpalmieri/.cargo/bin
 
 
 ## After setting envs, import them into the system environment

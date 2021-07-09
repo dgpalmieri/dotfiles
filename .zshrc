@@ -13,28 +13,51 @@
 # End of lines added by compinstall
 
 # Actions to perform on startup
+
+    # Alias 'jk' to 'esc' in zsh vim line mode
+    bindkey -M viins 'jk' vi-cmd-mode
+
     # Start Sway
     if [ "$(tty)" = "/dev/tty1" ]; then
-        exec sway
+        WLR_DRM_NO_MODIFIERS=1 sway
     fi
 
-    ## Initialize zsh_aliases
+    # Initialize zsh_aliases
     if [ -e $HOME/.zsh_aliases ]; then
         source $HOME/.zsh_aliases
     fi
 
-    ## Initialize zsh-autosuggestions
-    if [ -e $HOME/.zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
-        source $HOME/.zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-    fi
+    ## Initialize zsh plugins
+    for f in $HOME/.zsh_plugins/*; do
+        dirname="${f:29}"
+        if [[ $dirname = '/completions' ]]; then
+            continue
+        fi
+        source "$f$dirname.zsh"
+    done
+    ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 
-    ## Initialize zsh_envs
+    ## Initialize zsh completions
+    for f in $HOME/.zsh_plugins/completions/*; do
+        source "$f"
+    done
+
+    # Initialize zsh_envs
     if [ -e $HOME/.zsh_envs ]; then
         source $HOME/.zsh_envs
     fi
 
-    ## Activate thefuck
+    # Initialize SSH-agent
+    if [ -z "$(pgrep ssh-agent)" ]; then
+       rm -rf /tmp/ssh-*
+       eval $(ssh-agent) > /dev/null
+    else
+       export SSH_AGENT_PID=$(pgrep ssh-agent)
+       export SSH_AUTH_SOCK=$(find /tmp/ssh-* -name "agent.*")
+    fi
+
+    # Activate thefuck
     eval "$(thefuck --alias)"
 
-    ## Activate starship prompt
+    # Activate starship prompt
     eval "$(starship init zsh)"

@@ -16,8 +16,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'sheerun/vim-polyglot'
 
-Plug 'valloric/youcompleteme'
-Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'airblade/vim-gitgutter'
 set updatetime=100
@@ -37,8 +36,14 @@ let g:ycm_python_binary_path = '/bin/python3.9'
 " Remap <esc> to jk
 inoremap jk <Esc>
 
+" Remap tab and shift-tab to work with CoC
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
 " change gutter background color to make sense
 highlight clear SignColumn
+
+set colorcolumn=60,80,100,120
 
 set number
 set tabstop=4
