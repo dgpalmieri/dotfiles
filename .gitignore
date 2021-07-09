@@ -20,7 +20,7 @@ rtorrent/
 .local/
 .mozilla/
 .pki/
-.zsh-plugins/
+.zsh_plugins/
 
 ## Files
 
