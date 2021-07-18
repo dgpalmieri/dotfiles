@@ -23,6 +23,9 @@ set $menu bemenu
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+
+# Turn on adaptive_sync for all displays
+output * adaptive_sync on
 #
 # Example configuration:
 #
