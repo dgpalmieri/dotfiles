@@ -49,7 +49,7 @@
 
     # Initialize SSH-agent
     if [ -z "$(pgrep ssh-agent)" ]; then
-       rm -rf /tmp/ssh-*
+       rm -rf "/tmp/ssh-*"
        eval $(ssh-agent) > /dev/null
     else
        export SSH_AGENT_PID=$(pgrep ssh-agent)
@@ -61,3 +61,6 @@
 
     # Activate starship prompt
     eval "$(starship init zsh)"
+
+    # Activate zoxide
+    eval "$(zoxide init zsh)"
