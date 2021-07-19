@@ -37,10 +37,10 @@ output * adaptive_sync on
 #
 # Example configuration:
  exec swayidle -w \
-          timeout 300 'swaylock -f -c 000000' \
+          timeout 300 'swaylock -f --screenshots --clock --grace 10 --effect-blur 3x3 --effect-greyscale' \
           timeout 600 'swaymsg "output * dpms off"' \
                resume 'swaymsg "output * dpms on"' \
-          before-sleep 'swaylock -f -c 000000'
+          before-sleep 'swaylock -f --screenshots --clock --grace 10 --effect-blur 3x3 --effect-greyscale'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
