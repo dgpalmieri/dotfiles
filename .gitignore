@@ -12,6 +12,9 @@ rtorrent/
 .config/nvim/plugged/
 .config/pulse/
 .config/thefuck/__pycache__/
+.config/chromium/
+.config/coc/
+.npm/
 
 .ssh/
 .cache/
