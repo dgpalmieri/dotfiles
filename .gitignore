@@ -25,6 +25,9 @@
 .ipython/
 .jupyter/
 .npm/
+.docker/
+.gsutil/
+.ipynb_checkpoints/
 
 ## Files
 
@@ -40,3 +43,6 @@
 .sudo_as_admin_successful
 .viminfo
 .wget-hsts
+.selected_editor
+.azure
+.aws
