@@ -36,13 +36,20 @@ let g:ycm_python_binary_path = '/bin/python3.9'
 " Remap <esc> to jk
 inoremap jk <Esc>
 
-" Remap tab and shift-tab to work with CoC
+" Remap tab and s-tab to work with CoC
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+" Remaps for common coc functions
+xmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>ac  <Plug>(coc-codeaction)
+nmap <leader>qf  <Plug>(coc-fix-current)
 
 " change gutter background color to make sense
 highlight clear SignColumn
 
+" highlight columns for codestyle
 set colorcolumn=60,80,100,120
 
 set number
