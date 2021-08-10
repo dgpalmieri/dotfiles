@@ -86,6 +86,10 @@
     "memory": {
         "format": "{}% "
     },
+    "disk": {
+        "format": "{percentage_free}% free of {total}",
+        "path": "/home/dgpalmieri/"
+    },
     "temperature": {
         // "thermal-zone": 2,
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
@@ -156,7 +160,7 @@
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
     "custom/weather": {
-        "exec": "curl wttr.in/Fairbanks?format=%l:+%C+%t\n",
+        "exec": "curl wttr.in/Fairbanks?format=%l:+%C+%t",
         "interval": "3600"
     },
 }
