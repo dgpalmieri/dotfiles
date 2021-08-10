@@ -221,7 +221,7 @@ gaps outer 5
 default_border pixel 2
 
 # Set Background Image
-output "*" bg "$(~/Scripts/random_image)" fill
+output "*" bg "$(~/scripts/random_image.py)" fill
 
 # start redshift on sway start
 exec redshift
