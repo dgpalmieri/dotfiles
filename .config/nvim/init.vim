@@ -36,7 +36,7 @@ let g:ycm_python_binary_path = '/bin/python3.9'
 " Remap <esc> to jk
 inoremap jk <Esc>
 
-" Remap tab and s-tab to work with CoC
+" Remap tab and s-tab to interact with CoC
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
