@@ -1,11 +1,11 @@
 ## Directories
 
-AUR/
+aur/
 Desktop/
-Documents/
-Downloads/
-Pictures/
-Scripts/
+documents/
+downloads/
+pictures/
+scripts/
 rtorrent/
 
 .config/nvim/autoload/
