@@ -9,6 +9,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 set noshowmode
 
+Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 set encoding=utf-8
 
