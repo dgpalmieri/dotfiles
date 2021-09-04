@@ -51,7 +51,7 @@ nmap <leader>qf  <Plug>(coc-fix-current)
 highlight clear SignColumn
 
 " highlight columns for codestyle
-set colorcolumn=60,80,100,120
+set colorcolumn=80,100,120
 
 set number
 set tabstop=4
