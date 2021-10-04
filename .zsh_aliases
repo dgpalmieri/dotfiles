@@ -16,8 +16,7 @@ alias gs='git status'
 alias svim='sudo nvim'
 alias cpdir='rsync -ah --info=progress2'
 alias ls='exa'
-alias ll='ls -hl'
-alias la='ls -hal'
+alias ll='ls -hal'
 alias dsk='sudo fdisk -l'
 
 ## Exiting convenience
