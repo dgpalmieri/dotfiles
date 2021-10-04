@@ -2,6 +2,8 @@
 .config/nvim/autoload/
 .config/nvim/plugged/
 .config/pulse/
+.config/coc/
+.config/configstore/
 .dotnet/
 .landscape/
 .ssh/
@@ -12,7 +14,7 @@
 .local/
 .mozilla/
 .pki/
-.zsh-plugins/
+.zsh_plugins/
 .chef/
 .chef-workstation/
 .config/gcloud/
@@ -23,6 +25,9 @@
 .ipython/
 .jupyter/
 .npm/
+.docker/
+.gsutil/
+.ipynb_checkpoints/
 
 ## Files
 
@@ -38,3 +43,6 @@
 .sudo_as_admin_successful
 .viminfo
 .wget-hsts
+.selected_editor
+.azure
+.aws

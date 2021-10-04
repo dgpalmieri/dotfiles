@@ -2,6 +2,7 @@
     // Python
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
-    "python.linting.pycodestyleEnabled": true
+    "python.linting.pycodestyleEnabled": true,
+    "python.linting.pycodestylePath": "/home/dgpalmieri/.local/bin/pycodestyle"
 
 }

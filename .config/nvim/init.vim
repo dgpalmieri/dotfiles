@@ -9,6 +9,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 set noshowmode
 
+Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 set encoding=utf-8
 
@@ -37,6 +38,12 @@ inoremap jk <Esc>
 " Remap tab and s-tab to interact with CoC
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+" Remaps for common coc functions
+nmap <leader>a  <Plug>(coc-codeaction-line)
+xmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>ac  <Plug>(coc-codeaction)
+nmap <leader>qf  <Plug>(coc-fix-current)
 
 " change gutter background color to make sense
 highlight clear SignColumn
