@@ -17,7 +17,7 @@ set $right l
 set $term alacritty
 # Your preferred application launcher
 # Note: it's recommended that you pass the final command to sway
-set $menu bemenu
+set $menu wofi
 
 ### Output configuration
 #
@@ -71,8 +71,8 @@ output * adaptive_sync on
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-    bindsym $mod+d exec bemenu-run -i -p 'exec:'
-    bindsym $mod+Shift+d exec j4-dmenu-desktop --term='alacritty -e' --dmenu='bemenu -i -p "apps:"'
+    bindsym $mod+d exec wofi --show=run
+    bindsym $mod+Shift+d exec wofi --show=drun
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
