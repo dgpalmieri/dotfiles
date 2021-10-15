@@ -224,10 +224,10 @@ default_border pixel 2
 output "*" bg "$(~/scripts/random_image.py)" fill
 
 # Set monitor refresh rate to 100hz and positioned to the right of the laptop
-output "Unknown U34G2G4R3 0x0000856C" mode 3440x1440@99.982Hz pos 1920 0
+output "Unknown U34G2G4R3 0x0000856C" mode 3440x1440@99.982Hz pos 0 0
 
 # Set laptop output to be on the left
-output "Chimei Innolux Corporation 0x15D3 0x00000000" pos 0 0
+output "Chimei Innolux Corporation 0x15D3 0x00000000" pos 3440 0
 
 # start redshift on sway start
 exec redshift
