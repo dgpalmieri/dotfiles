@@ -6,7 +6,7 @@
     export GPG_TTY=$(tty)
 
 ## Sway
-    export SWAYCONFIG=~/.config/sway/config
+    export SWAYCONFIG=/home/dgpalmieri/.config/sway/config
 
 ## Starship config
     export STARSHIP_CONFIG=/home/dgpalmieri/.config/starship/starship.toml
