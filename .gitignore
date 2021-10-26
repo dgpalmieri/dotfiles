@@ -14,6 +14,7 @@ rtorrent/
 .config/thefuck/__pycache__/
 .config/chromium/
 .config/coc/
+.config/mpv/watch_later/
 .npm/
 
 .ssh/
