@@ -5,25 +5,27 @@ Desktop/
 documents/
 Downloads/
 pictures/
-scripts/
 rtorrent/
+scripts/
 
+.config/coc/
+.config/chromium/
+.config/Code - OSS/
+.config/mpv/watch_later/
 .config/nvim/autoload/
 .config/nvim/plugged/
 .config/pulse/
 .config/thefuck/__pycache__/
-.config/chromium/
-.config/coc/
-.config/mpv/watch_later/
-.npm/
 
-.ssh/
 .cache/
 .cargo/
 .gnupg/
 .local/
 .mozilla/
+.npm/
 .pki/
+.ssh/
+.vscode-oss/
 .zsh_plugins/
 
 ## Files
