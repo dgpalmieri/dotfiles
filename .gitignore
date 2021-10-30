@@ -20,6 +20,7 @@ scripts/
 .cache/
 .cargo/
 .gnupg/
+.ipython/
 .local/
 .mozilla/
 .npm/
