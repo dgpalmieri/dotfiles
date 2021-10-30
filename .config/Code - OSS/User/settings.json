@@ -1,0 +1,11 @@
+{
+    "workbench.colorTheme": "Solarized Dark",
+    "window.menuBarVisibility": "toggle",
+    "editor.fontFamily": "'hurmit','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ]
+}
