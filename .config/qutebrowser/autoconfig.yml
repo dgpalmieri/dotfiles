@@ -18,6 +18,15 @@ settings:
     https://alaska.zoom.us: true
   content.media.video_capture:
     https://alaska.zoom.us: true
+  downloads.location.directory:
+    global: /home/dgpalmieri/downloads
+  editor.command:
+    global:
+    - nvim
+    - -f
+    - '{file}'
+    - -c
+    - normal {line}G{column0}l
   qt.args:
     global:
     - enable-features=WebRTCPipeWireCapturer
