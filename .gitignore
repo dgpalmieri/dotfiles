@@ -32,6 +32,7 @@ scripts/
 ## Files
 
 .config/mimeapps.list
+.config/qutebrowser/qsettings/QtProject.conf
 .git-credentials
 .gitconfig
 .histfile
