@@ -1,7 +1,5 @@
 # dotfiles
 
-This is a list of dotfiles for the personal use of Dylan Palmieri.
-
 Currently installed AUR packages:
 
 * chromium-widevine
