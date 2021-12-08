@@ -20,6 +20,8 @@ settings:
     https://alaska.zoom.us: true
   downloads.location.directory:
     global: /home/dgpalmieri/downloads
+  downloads.prevent_mixed_content:
+    global: false
   editor.command:
     global:
     - nvim
