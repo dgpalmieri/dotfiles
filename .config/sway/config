@@ -225,6 +225,6 @@ exec redshift
 
 # Take screenshots with grim
 ## Screenshot focused monitor
-bindsym $mod+t exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name')
+bindsym $mod+s exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name')
 ## Screenshot focused window
-bindsym $mod+Shift+t exec grim -g "$(slurp)"
+bindsym $mod+Shift+s exec grim -g "$(slurp)"
