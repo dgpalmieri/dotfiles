@@ -77,3 +77,6 @@ set expandtab
 
 set splitright
 set splitbelow
+
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
