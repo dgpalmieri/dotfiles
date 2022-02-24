@@ -8,6 +8,7 @@ pictures/
 rtorrent/
 scripts/
 
+.config/Bitwarden CLI/
 .config/coc/
 .config/chromium/
 .config/Code - OSS/
