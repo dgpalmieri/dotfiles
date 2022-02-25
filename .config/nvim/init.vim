@@ -78,5 +78,8 @@ set expandtab
 set splitright
 set splitbelow
 
+set scrolloff=5
+set sidescrolloff=5
+
 highlight Normal ctermbg=none
 highlight NonText ctermbg=none
