@@ -1,20 +1,23 @@
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath=&runtimepath
-"source ~/.vimrc
 
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'altercation/vim-colors-solarized'
+
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 set noshowmode
 
 Plug 'tpope/vim-surround'
+
 Plug 'tpope/vim-fugitive'
 set encoding=utf-8
 
 Plug 'scrooloose/nerdtree'
+
 Plug 'scrooloose/nerdcommenter'
+
 Plug 'sheerun/vim-polyglot'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -48,13 +51,18 @@ nmap <leader>qf  <Plug>(coc-fix-current)
 " change gutter background color to make sense
 highlight clear SignColumn
 
-" highlight columns 60, 80, and 120
+" highlight columns for codestyle
 set colorcolumn=60,80,100,120
 
 set number
+set relativenumber
+
 set tabstop=4
 set shiftwidth=4
 set expandtab
 
 set splitright
 set splitbelow
+
+set scrolloff=5
+set sidescrolloff=5
