@@ -30,6 +30,7 @@
 .vscode-server/
 .zsh_plugins/
 
+airflow/
 collected_data/
 ermda_tools/
 git-filter-repo/
