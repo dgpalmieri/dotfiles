@@ -35,7 +35,9 @@ collected_data/
 ermda_tools/
 git-filter-repo/
 resources/
+tf-github/
 workstation_setup_docs/
+zmk-config/
 
 ## Files
 
