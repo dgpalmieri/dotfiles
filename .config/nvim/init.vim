@@ -35,6 +35,9 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+" Remap leader to space
+let mapleader=' '
+
 " Remap <esc> to jk
 inoremap jk <Esc>
 
