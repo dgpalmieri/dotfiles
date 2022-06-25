@@ -19,7 +19,7 @@
 
     # Start Sway
     if [ "$(tty)" = "/dev/tty1" ]; then
-        WLR_DRM_NO_MODIFIERS=1 sway
+        WLR_DRM_NO_MODIFIERS=1 Hyprland
     fi
 
     # Initialize zsh_aliases
