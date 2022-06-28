@@ -25,11 +25,12 @@
     ## Initialize zsh plugins
     for f in $HOME/.zsh_plugins/*; do
         dirname="${f:29}"
-        if [[ $dirname = '/completions' ]]; then
+        if [[ $dirname == *"completions"* ]]; then
             continue
         fi
         source "$f$dirname.zsh"
     done
+
     ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 
     ## Initialize zsh completions
@@ -51,6 +52,8 @@
        export SSH_AUTH_SOCK=$(find /tmp/ssh-* -name "agent.*")
     fi
 
+    # Add zsh completions functionality
+    fpath=(/home/dgpalmieri/.zsh_plugins/zsh-completions/src $fpath)
 
     ## Activate thefuck
     eval "$(thefuck --alias)"
