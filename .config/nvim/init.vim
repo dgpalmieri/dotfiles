@@ -56,6 +56,7 @@ highlight clear SignColumn
 
 " highlight columns for codestyle
 set colorcolumn=60,80,100,120
+set textwidth=80
 
 set number
 set relativenumber
@@ -69,3 +70,8 @@ set splitbelow
 
 set scrolloff=5
 set sidescrolloff=5
+
+set inccommand=nosplit
+
+set ignorecase
+set smartcase
