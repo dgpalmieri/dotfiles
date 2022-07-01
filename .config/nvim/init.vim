@@ -4,26 +4,22 @@ let &packpath=&runtimepath
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'altercation/vim-colors-solarized'
-
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 set noshowmode
-
-Plug 'tpope/vim-surround'
-
-Plug 'tpope/vim-fugitive'
-set encoding=utf-8
-
-Plug 'scrooloose/nerdtree'
-
-Plug 'scrooloose/nerdcommenter'
-
-Plug 'sheerun/vim-polyglot'
-
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 Plug 'airblade/vim-gitgutter'
 set updatetime=100
+Plug 'tpope/vim-fugitive'
+set encoding=utf-8
+Plug 'sheerun/vim-polyglot'
+
+Plug 'scrooloose/nerdtree'
+Plug 'unblevable/quick-scope'
+
+Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-surround'
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
