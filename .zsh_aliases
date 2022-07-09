@@ -4,13 +4,9 @@ alias grep='grep --color=auto'
 alias diff='diff --color=auto'
 alias ls='ls --color=auto'
 
-## Light
-alias light+='sudo light -A'
-alias light-='sudo light -U'
-
 ## Workflow
 alias mkdir='mkdir -p -v'
-alias update='sudo pacman -Syu'
+alias update='sudo apt-get update && sudo apt-get upgrade'
 alias gfix='git commit -a --fixup'
 alias gs='git status'
 alias svim='sudo nvim'
@@ -20,14 +16,10 @@ alias ll='ls -hal'
 alias dsk='sudo fdisk -l'
 alias bat='batcat'
 
+alias python='python3'
+
 ## Exiting convenience
 alias :q='exit'
 alias reboot='sudo reboot'
 alias shutdown='sudo shutdown now'
 
-## Python Virtual Environments
-alias ve='python3 -m virtualenv ./venv'
-alias va='source ./venv/bin/activate'
-
-## Others
-alias :w='echo "This isn'"'"'t neovim, you absolute fucking donkey"'
