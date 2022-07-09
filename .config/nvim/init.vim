@@ -2,27 +2,24 @@ set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath=&runtimepath
 
 call plug#begin('~/.config/nvim/plugged')
-Plug 'altercation/vim-colors-solarized'
 
+Plug 'altercation/vim-colors-solarized'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 set noshowmode
-
-Plug 'tpope/vim-surround'
-
-Plug 'tpope/vim-fugitive'
-set encoding=utf-8
-
-Plug 'scrooloose/nerdtree'
-
-Plug 'scrooloose/nerdcommenter'
-
-Plug 'sheerun/vim-polyglot'
-
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 Plug 'airblade/vim-gitgutter'
 set updatetime=100
+Plug 'tpope/vim-fugitive'
+set encoding=utf-8
+Plug 'sheerun/vim-polyglot'
+
+Plug 'scrooloose/nerdtree'
+Plug 'unblevable/quick-scope'
+
+Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-surround'
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
@@ -32,6 +29,9 @@ let g:airline_solarized_bg='dark'
 syntax enable
 set background=dark
 colorscheme solarized
+
+"remap leader to space
+let mapleader=' '
 
 " Remap <esc> to jk - highly recommended
 inoremap jk <Esc>
@@ -51,6 +51,7 @@ highlight clear SignColumn
 
 " highlight columns for codestyle
 set colorcolumn=80,100,120
+set textwidth=100
 
 set number
 set relativenumber
@@ -64,6 +65,11 @@ set splitbelow
 
 set scrolloff=5
 set sidescrolloff=5
+
+set inccommand=nosplit
+
+set ignorecase
+set smartcase
 
 highlight Normal ctermbg=none
 highlight NonText ctermbg=none
