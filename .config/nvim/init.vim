@@ -34,6 +34,10 @@ colorscheme solarized
 " Remap leader to space
 let mapleader=' '
 
+" leader+p deletes visual selection and replaces it with yanked text, without
+" overwriting register 0
+xnoremap <leader>p "_dP
+
 " Remap <esc> to jk
 inoremap jk <Esc>
 
