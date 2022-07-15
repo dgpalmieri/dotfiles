@@ -17,7 +17,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'unblevable/quick-scope'
 
 Plug 'scrooloose/nerdcommenter'
-Plug 'tpope/vim-surround'
+Plug 'kylechui/nvim-surround'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
