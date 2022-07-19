@@ -17,7 +17,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'unblevable/quick-scope'
 
 Plug 'scrooloose/nerdcommenter'
-Plug 'tpope/vim-surround'
+Plug 'kylechui/nvim-surround'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -32,6 +32,10 @@ colorscheme solarized
 
 "remap leader to space
 let mapleader=' '
+
+" leader+p deletes visual selection and replaces it with yanked text, without
+" overwriting register 0
+xnoremap <leader>p "_dP
 
 " Remap <esc> to jk - highly recommended
 inoremap jk <Esc>
