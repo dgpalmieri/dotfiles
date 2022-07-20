@@ -16,7 +16,7 @@ alias gs='git status'
 alias svim='sudo nvim'
 alias cpdir='rsync -ah --info=progress2'
 alias ls='exa'
-alias ll='ls -alh'
+alias ll='exa -alh'
 alias dsk='sudo fdisk -l'
 
 ## Exiting convenience
@@ -24,10 +24,5 @@ alias :q='exit'
 alias reboot='sudo reboot'
 alias shutdown='sudo shutdown now'
 
-## Python Virtual Environments
-alias ve='python3 -m virtualenv ./venv'
-alias va='source ./venv/bin/activate'
-
 ## Others
-alias :w='echo "This isn'"'"'t neovim, you absolute fucking donkey"'
 alias tor='nordvpn connect p2p && rtorrent && nordvpn disconnect'
