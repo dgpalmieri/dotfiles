@@ -30,7 +30,7 @@
     ## Initialize zsh plugins
     for f in $HOME/.zsh_plugins/*; do
         dirname="${f:29}"
-        if [[ $dirname = *'/completions'* ]]; then
+        if [[ $dirname == *'completions'* ]]; then
             continue
         fi
         source "$f$dirname.zsh"
