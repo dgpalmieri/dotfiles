@@ -1,18 +1,18 @@
 ## Directories
 
-aur/
 Desktop/
+aur/
 documents/
 downloads/
 pictures/
 rtorrent/
 scripts/
-qmk_firmware/
+work/
 
 .config/Bitwarden CLI/
-.config/coc/
-.config/chromium/
 .config/Code - OSS/
+.config/chromium/
+.config/coc/
 .config/mpv/watch_later/
 .config/nvim/autoload/
 .config/nvim/plugged/
@@ -39,5 +39,5 @@ qmk_firmware/
 .gitconfig
 .histfile
 .lesshst
-.zcompdump
 .python_history
+.zcompdump
