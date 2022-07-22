@@ -57,7 +57,7 @@ vim.api.nvim_set_keymap('n', '<leader>ac', '<Plug>(coc-codeaction)', {})
 vim.api.nvim_set_keymap('n', '<leader>qf', '<Plug>(coc-fix-current)', {})
 
 -- highlight columns for codestyle
-vim.opt.colorcolumn = "60,80,100"
+vim.opt.colorcolumn = "80,100"
 vim.opt.textwidth = 88
 
 vim.opt.number = true
