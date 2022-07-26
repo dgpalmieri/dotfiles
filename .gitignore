@@ -33,6 +33,7 @@
 acep-devops/
 airflow/
 collected_data/
+collection_backups/
 ermda_tools/
 git-filter-repo/
 resources/
