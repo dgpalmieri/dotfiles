@@ -1,8 +1,15 @@
 {
+    "coc.preferences.formatOnSaveFiletypes": [
+        "python"
+    ],
+
     // Python
+    "python.pythonPath": "/bin/python3",
+    "python.formatting.provider": "black",
     "python.linting.enabled": true,
-    "python.linting.pylintEnabled": true,
-    "python.linting.pycodestyleEnabled": true,
+    "python.linting.flake8Enabled": true,
+
+    // C/C++
     "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/13.0.0/clangd_13.0.0/bin/clangd"
 
 }
