@@ -7,4 +7,5 @@ Currently installed AUR packages:
 * nordvpn-bin
 * otf-hermit
 * redshift-wlr-gamma-control-git
+* visual-studio-code-bin
 * swaylock-effects-git
