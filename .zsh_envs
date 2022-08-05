@@ -4,26 +4,26 @@
     export GPG_TTY=$(tty)
 
 ## Sway
-    export SWAYCONFIG=/home/dgpalmieri/.config/sway/config
+    export SWAYCONFIG=/home/user/.config/sway/config
 
 ## Starship config
-    export STARSHIP_CONFIG=/home/dgpalmieri/.config/starship/starship.toml
+    export STARSHIP_CONFIG=/home/user/.config/starship/starship.toml
 
 ## qutebrowser screen sharing (someday) -> QT6! Soon^TM
     export XDG_CURRENT_DESKTOP=sway
     export XDG_SESSION_TYPE=wayland
-    export XDG_CONFIG_HOME=/home/dgpalmieri/.config/
+    export XDG_CONFIG_HOME=/home/user/.config/
     export RTC_USE_PIPEWIRE=true
 
 ## Add firefox wayland flag
     export MOZ_ENABLE_WAYLAND=1
 
 ## Add local bin to my $PATH
-    export PATH=$PATH:/home/dgpalmieri/.local/bin
-    export PATH=$PATH:/home/dgpalmieri/.cargo/bin
+    export PATH=$PATH:/home/user/.local/bin
+    export PATH=$PATH:/home/user/.cargo/bin
 
 ## Set grim to save screenshots to downloads by default
-    export GRIM_DEFAULT_DIR=/home/dgpalmieri/downloads/
+    export GRIM_DEFAULT_DIR=/home/user/downloads/
 
 ## After setting envs, import them into the system environment
 # systemctl --user import-environment GPG_TTY SWAYCONFIG STARSHIP_CONFIG XDG_CURRENT_DESKTOP XDG_SESSION_TYPE XDG_CONFIG_HOME RTC_USE_PIPEWIRE MOZ_ENABLE_WAYLAND PATH GRIM_DEFAULT_DIR
