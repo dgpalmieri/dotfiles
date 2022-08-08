@@ -4,7 +4,7 @@
     "height": 22, // Waybar height (to be removed for auto height)
     // "width": 1260, // Waybar width
     // Choose the order of the modules
-    "modules-left": ["wlr/workspaces", "sway/mode", "sway/window"],
+    "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
     "modules-center": [],
     "modules-right": ["idle_inhibitor", "custom/weather", "pulseaudio", "network", "memory", "disk", "cpu", "temperature", "backlight", "battery", "clock", "tray"],
     // Modules configuration
