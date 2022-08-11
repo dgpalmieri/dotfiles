@@ -59,9 +59,6 @@
     # Add zsh completions functionality
     fpath=(/home/dgpalmieri/.zsh_plugins/zsh-completions/src $fpath)
 
-    # Activate thefuck
-    eval "$(thefuck --alias)"
-
     # Activate starship prompt
     eval "$(starship init zsh)"
 
