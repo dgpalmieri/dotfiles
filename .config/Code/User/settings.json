@@ -1,5 +1,6 @@
 {
-    "workbench.colorTheme": "Solarized Dark",
+    "workbench.colorTheme": "Gruvbox Dark Medium",
+    "editor.fontFamily": "'Fira Code Mono', 'monospace', monospace",
     "window.menuBarVisibility": "toggle",
     "editor.fontFamily": "'hurmit','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "vim.insertModeKeyBindings": [
