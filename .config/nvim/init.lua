@@ -37,6 +37,8 @@ require('lualine').setup {
 -- I can't believe there isn't a better way to do this
 vim.cmd([[colorscheme gruvbox]])
 
+vim.cmd([[autocmd BufWritePost *.tf !terraform fmt %]])
+
 require("nvim-surround").setup({})
 
 vim.g.mapleader = ' '
