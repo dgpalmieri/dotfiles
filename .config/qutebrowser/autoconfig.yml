@@ -9,6 +9,7 @@ settings:
   content.desktop_capture:
     global: ask
     https://alaska.zoom.us: true
+    https://discord.com: true
     https://mozilla.github.io: true
   content.media.audio_capture:
     https://alaska.zoom.us: true
