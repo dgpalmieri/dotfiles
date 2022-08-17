@@ -1,11 +1,6 @@
 {
-    "coc.preferences.formatOnSaveFiletypes": [
-        "python"
-    ],
-
     // Python
-    "python.pythonPath": "/bin/python3",
-    "python.formatting.provider": "black",
+    "python.pythonPath": "/usr/bin/python3",
     "python.linting.enabled": true,
     "python.linting.flake8Enabled": true
 }

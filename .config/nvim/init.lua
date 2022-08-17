@@ -38,6 +38,7 @@ require('lualine').setup {
 vim.cmd([[colorscheme gruvbox]])
 
 vim.cmd([[autocmd BufWritePost *.tf !terraform fmt %]])
+vim.cmd([[autocmd BufWritePost *.py !black %]])
 
 require("nvim-surround").setup({})
 
