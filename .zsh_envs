@@ -9,7 +9,7 @@
 ## Starship config
     export STARSHIP_CONFIG=/home/dgpalmieri/.config/starship/starship.toml
 
-## qutebrowser screen sharing (someday) -> QT6! Soon^TM
+## qutebrowser screen sharing
     export XDG_CURRENT_DESKTOP=sway
     export XDG_SESSION_TYPE=wayland
     export XDG_CONFIG_HOME=/home/dgpalmieri/.config/
