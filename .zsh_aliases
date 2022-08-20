@@ -4,13 +4,9 @@ alias grep='grep --color=auto'
 alias diff='diff --color=auto'
 alias ls='ls --color=auto'
 
-## Light
-alias light+='sudo light -A'
-alias light-='sudo light -U'
-
 ## Workflow
 alias mkdir='mkdir -p -v'
-alias update='sudo pacman -Syu'
+alias update='apk update && apk upgrade -aiv'
 alias gfix='git commit -a --fixup'
 alias gs='git status'
 alias svim='sudo nvim'
@@ -23,6 +19,3 @@ alias dsk='sudo fdisk -l'
 alias :q='exit'
 alias reboot='sudo reboot'
 alias shutdown='sudo shutdown now'
-
-## Others
-alias tor='nordvpn connect p2p && rtorrent && nordvpn disconnect'
