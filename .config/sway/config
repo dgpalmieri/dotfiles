@@ -224,6 +224,9 @@ output "Chimei Innolux Corporation 0x15D3 0x00000000" pos 3440 0
 # Start redshift on sway start
 exec redshift
 
+# start mako
+exec mako
+
 # Take screenshots with grim
 ## Screenshot focused monitor
 bindsym $mod+t exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name')
