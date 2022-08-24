@@ -28,13 +28,15 @@
     fi
 
     ## Initialize zsh plugins
-    for f in $HOME/.zsh_plugins/*; do
-        dirname="${f:23}"
-        if [[ $dirname == *'completions'* ]]; then
-            continue
-        fi
-        source "$f$dirname.zsh"
-    done
+    if [ -e $HOME/.zsh_plugins ]; then
+        for f in $HOME/.zsh_plugins/*; do
+            dirname="${f:23}"
+            if [[ $dirname == *'completions'* ]]; then
+                continue
+            fi
+            source "$f$dirname.zsh"
+        done
+    fi
     ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 
     ## Initialize zsh completions
