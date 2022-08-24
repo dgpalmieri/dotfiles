@@ -1,0 +1,15 @@
+[Modem Manager]
+CarrierMMSC=http://mmsc.gci.net
+MMS_APN=mms.gci
+CarrierMMSProxy=24.237.158.34:9201
+DefaultModemNumber=NULL
+AutoProcessOnConnection=true
+AutoProcessSMSWAP=true
+IMSI=311370001182245
+
+[Settings]
+UseDeliveryReports=false
+AutoCreateSMIL=false
+ForceCAres=false
+TotalMaxAttachmentSize=1048576
+MaxAttachments=25
