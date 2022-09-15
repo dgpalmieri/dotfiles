@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# If any command fails, exit immediately with that command's exit status
-set -eo pipefail
-
 # Find all changed files for this commit
 # Compute the diff only once to save a small amount of time.
 CHANGED_FILES=$(git diff --name-only --cached --diff-filter=ACMR)
@@ -17,9 +14,15 @@ PY_FILES=$(get_pattern_files .py)
 if [[ -n "$PY_FILES" ]]
 then
     # Run black against changed python files for this commit
-    black --check $PY_FILES
-    echo "black passes all altered python sources."
+    if [[ -n "black --check $PY_FILES" ]]
+    then
+        black $PY_FILES
+    else
+        echo "black passes all altered python sources."
+    fi
     # Run flake8 against changed python files for this commit
-    flake8 $PY_FILES
-    echo "flake8 passed!"
+    if [[ -n "flake8 $PY_FILES" ]]
+    then
+        exit
+    fi
 fi
