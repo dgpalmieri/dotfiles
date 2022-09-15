@@ -1,8 +1,4 @@
 {
-    "coc.preferences.formatOnSaveFiletypes": [
-        "python"
-    ],
-
     // Python
     "python.pythonPath": "/bin/python3",
     "python.formatting.provider": "black",
