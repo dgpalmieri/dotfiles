@@ -55,11 +55,7 @@ vim.api.nvim_set_keymap('x', '<leader>p', '"_dP', { noremap = true })
 
 vim.api.nvim_set_keymap('i', 'jk', '<Esc>', { noremap = true })
 
--- Remap tab and s-tab to interact with CoC
-vim.cmd([[
-    inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-    inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-]])
+vim.api.nvim_set_keymap('i', '<Tab>', 'coc#pum#visible() ? coc#pum#confirm() : "<Tab>"', { expr = true, noremap = true })
 
 vim.api.nvim_set_keymap('n', '<leader>a', '<Plug>(coc-codeaction-line)', {})
 vim.api.nvim_set_keymap('x', '<leader>a', '<Plug>(coc-codeaction-selected)', {})
