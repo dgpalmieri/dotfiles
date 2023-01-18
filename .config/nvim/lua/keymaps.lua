@@ -1,5 +1,5 @@
+vim.api.nvim_create_autocmd('BufWritePost', { desc = 'Autoformat Python files', command = '!black %', pattern = '*.py'})
 vim.api.nvim_create_autocmd('BufWritePost', { desc = 'Autoformat Terraform files', command = '!terraform fmt %', pattern = '*.tf'})
-vim.api.nvim_create_autocmd('BufWritePost', { desc = 'Autoformat Python files', command = '!black %', pattern = '*.tf'})
 
 vim.g.mapleader = ' '
 vim.api.nvim_set_keymap('x', '<leader>p', '"_dP', { noremap = true })
