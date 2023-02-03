@@ -4,7 +4,6 @@ vim.opt.background = "dark"
 vim.opt.updatetime = 100
 vim.opt.encoding = "utf-8"
 
--- highlight columns for codestyle
 vim.opt.colorcolumn = "60,88"
 vim.opt.textwidth = 88
 
@@ -26,3 +25,5 @@ vim.opt.inccommand = "nosplit"
 
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+
+vim.opt.mouse = ""
