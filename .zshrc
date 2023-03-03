@@ -33,11 +33,6 @@
 
     ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 
-    ## Initialize zsh completions
-    for f in $HOME/.zsh_plugins/completions/*; do
-        source "$f"
-    done
-
     ## Initialize zsh_envs
     if [ -e $HOME/.zsh_envs ]; then
         source $HOME/.zsh_envs
@@ -55,14 +50,8 @@
     # Add zsh completions functionality
     fpath=(/home/dgpalmieri/.zsh_plugins/zsh-completions/src $fpath)
 
-    ## Activate thefuck
-    eval "$(thefuck --alias)"
-
     ## Activate starship prompt
     eval "$(starship init zsh)"
-
-    ## Activate chef
-    eval "$(chef shell-init zsh)"
 
     ## Activate zoxide
     eval "$(zoxide init zsh)"

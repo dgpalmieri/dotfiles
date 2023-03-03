@@ -12,6 +12,6 @@
     export PATH=$PATH:/home/dgpalmieri/.local/bin
     export PATH=$PATH:/home/dgpalmieri/.cargo/bin
 
-## Add docker completion to $fpath
-    export fpath=(~/.zsh-plugins/completions $fpath)
+## Add completions to $fpath
+    export fpath=(~/.zsh-plugins/completions ~/.zsh_plugins/zsh-completions/src $fpath)
 
