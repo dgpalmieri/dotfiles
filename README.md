@@ -9,6 +9,7 @@
   - [more completions](https://github.com/zsh-users/zsh-completions)
 - neovim
   - packer
+  - [coc plugins](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#implemented-coc-extensions)
 - exa (must be manually installed on Ubuntu older than 20.10)
 - delta (git-delta package)
 - git
@@ -24,4 +25,4 @@
   - black
   - flake8 + bugbear
   - pycodestyle
-- Docker
+- [Docker](https://docs.docker.com/engine/install/ubuntu/)
