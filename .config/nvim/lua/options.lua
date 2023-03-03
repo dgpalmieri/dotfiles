@@ -26,3 +26,5 @@ vim.opt.inccommand = "nosplit"
 
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+
+vim.opt.mouse = ""
