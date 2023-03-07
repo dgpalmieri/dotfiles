@@ -10,6 +10,7 @@ get_pattern_files() {
 }
 # Get all changed python files
 PY_FILES=$(get_pattern_files .py)
+NOTEBOOKS=$(get_pattern_files .ipynb)
 
 if [[ -n "$PY_FILES" ]]
 then
@@ -20,8 +21,25 @@ then
     else
         echo "black passes all altered python sources."
     fi
+
     # Run flake8 against changed python files for this commit
     if [[ -n "flake8 $PY_FILES" ]]
+    then
+        exit
+    fi
+fi
+
+if [[ -n "$NOTEBOOKS" ]] then
+    # Run black against changed notebooks for this commit
+    if [[ -n "black --check $NOTEBOOKS" ]]
+    then
+        black $NOTEBOOKS
+    else
+        echo "black passes all altered notebooks."
+    fi
+
+    # Run flake8 against changed python files for this commit
+    if [[ -n "nbqa flake8 $NOTEBOOKS" ]]
     then
         exit
     fi
