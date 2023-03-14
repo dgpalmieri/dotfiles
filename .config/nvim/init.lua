@@ -10,6 +10,8 @@ require('lualine').setup({
     }
 })
 
+require('bufferline').setup{}
+
 vim.cmd('colorscheme ' .. colorscheme)
 
 require("nvim-surround").setup({})

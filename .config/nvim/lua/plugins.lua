@@ -5,6 +5,7 @@ return require('packer').startup(function(use)
 
     use 'nvim-lualine/lualine.nvim'
     use 'kyazdani42/nvim-web-devicons'
+    use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
 
     use 'airblade/vim-gitgutter'
 

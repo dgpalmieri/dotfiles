@@ -1,5 +1,6 @@
 vim.opt.syntax = "enable"
 vim.opt.background = "dark"
+vim.opt.termguicolors = true
 
 vim.opt.updatetime = 100
 vim.opt.encoding = "utf-8"
