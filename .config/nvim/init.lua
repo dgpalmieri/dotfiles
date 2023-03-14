@@ -2,10 +2,8 @@ require('plugins')
 require('options')
 require('keymaps')
 
-local colorscheme = "gruvbox"
-require(colorscheme).setup({
-    italic = false,
-})
+local colorscheme = "gruvbox-material"
+
 require('lualine').setup({
     options = {
         theme = colorscheme

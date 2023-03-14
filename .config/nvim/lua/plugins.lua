@@ -1,7 +1,7 @@
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
-    use 'ellisonleao/gruvbox.nvim'
+    use 'sainnhe/gruvbox-material'
 
     use 'nvim-lualine/lualine.nvim'
     use 'kyazdani42/nvim-web-devicons'
@@ -11,6 +11,10 @@ return require('packer').startup(function(use)
     use 'tpope/vim-fugitive'
 
     use 'sheerun/vim-polyglot'
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }
 
     use 'scrooloose/nerdtree'
     use 'unblevable/quick-scope'
