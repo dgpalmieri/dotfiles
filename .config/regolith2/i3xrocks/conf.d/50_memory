@@ -1,0 +1,4 @@
+# Memory
+[memory]
+command=free -h | awk '/^Mem:/ {print $3}'
+interval=10

@@ -1,0 +1,6 @@
+# weather
+#
+# Display local weather
+[weather]
+command=curl wttr.in/Fairbanks?format=3 | sed 's/Fairbanks: //g'
+interval=600

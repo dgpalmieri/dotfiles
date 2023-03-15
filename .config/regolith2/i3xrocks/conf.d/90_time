@@ -1,0 +1,4 @@
+# Date Time
+[time]
+command=date '+%Y-%m-%d %H:%M'
+interval=xresource:i3xrocks.time.interval 10
