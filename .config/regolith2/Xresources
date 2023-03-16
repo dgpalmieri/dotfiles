@@ -1,4 +1,5 @@
 i3-wm.mod: Mod1
 i3-wm.alt: Mod4
 
+gnome.terminal.font: Fira Code Medium 10
 regolith.look.path: /usr/share/regolith-look/gruvbox
