@@ -29,7 +29,7 @@
 
     ## Initialize zsh plugins
     for f in $HOME/.zsh_plugins/*; do
-        dirname="${f:29}"
+        dirname="${f:24}"
         if [[ $dirname == *'completions'* ]]; then
             continue
         fi
@@ -38,9 +38,9 @@
     ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 
     ## Initialize zsh completions
-    for f in $HOME/.zsh_plugins/completions/*; do
-        source "$f"
-    done
+#    for f in $HOME/.zsh_plugins/completions/*; do
+#        source "$f"
+#    done
 
     # Initialize zsh_envs
     if [ -e $HOME/.zsh_envs ]; then

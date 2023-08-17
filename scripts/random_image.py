@@ -5,7 +5,7 @@ import random
 
 
 def main():
-    print(random.choice(glob.glob("/home/dgpalmieri/pictures/*")))
+    print(random.choice(glob.glob("/home/dylan/pictures/*")))
 
 
 if __name__ == "__main__":

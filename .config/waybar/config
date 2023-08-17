@@ -123,7 +123,7 @@
         "on-click": "pavucontrol"
     },
     "custom/weather": {
-        "exec": "curl wttr.in/Fairbanks?format=%l:+%C+%t",
+        "exec": "curl wttr.in/Haines?format=%l:+%C+%t",
         "interval": "3600"
     },
 }
