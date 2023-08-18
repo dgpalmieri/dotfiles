@@ -6,7 +6,7 @@
 # End of lines configured by zsh-newuser-install
 
 # The following lines were added by compinstall
-    zstyle :compinstall filename '/home/dgpalmieri/.zshrc'
+    zstyle :compinstall filename '/home/dylan/.zshrc'
 
     autoload -Uz compinit
     compinit
@@ -57,7 +57,7 @@
     fi
 
     # Add zsh completions functionality
-    fpath=(/home/dgpalmieri/.zsh_plugins/zsh-completions/src $fpath)
+    fpath=(/home/dylan/.zsh_plugins/zsh-completions/src $fpath)
 
     # Activate starship prompt
     eval "$(starship init zsh)"

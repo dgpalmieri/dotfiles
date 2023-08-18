@@ -4,26 +4,26 @@
     export GPG_TTY=$(tty)
 
 ## Sway
-    export SWAYCONFIG=/home/dgpalmieri/.config/sway/config
+    export SWAYCONFIG=/home/dylan/.config/sway/config
 
 ## Starship config
-    export STARSHIP_CONFIG=/home/dgpalmieri/.config/starship/starship.toml
+    export STARSHIP_CONFIG=/home/dylan/.config/starship/starship.toml
 
 ## qutebrowser screen sharing
     export XDG_CURRENT_DESKTOP=sway
     export XDG_SESSION_TYPE=wayland
-    export XDG_CONFIG_HOME=/home/dgpalmieri/.config/
+    export XDG_CONFIG_HOME=/home/dylan/.config/
     export RTC_USE_PIPEWIRE=true
 
 ## Add firefox wayland flag
     export MOZ_ENABLE_WAYLAND=1
 
 ## Add local bin to my $PATH
-    export PATH=$PATH:/home/dgpalmieri/.local/bin
-    export PATH=$PATH:/home/dgpalmieri/.cargo/bin
+    export PATH=$PATH:/home/dylan/.local/bin
+    export PATH=$PATH:/home/dylan/.cargo/bin
 
 ## Set grim to save screenshots to downloads by default
-    export GRIM_DEFAULT_DIR=/home/dgpalmieri/downloads/
+    export GRIM_DEFAULT_DIR=/home/dylan/downloads/
 
 ## Set qutebrowser as the default browser
     export BROWSER=/bin/qutebrowser
