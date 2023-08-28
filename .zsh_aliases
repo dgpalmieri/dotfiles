@@ -7,10 +7,13 @@ alias ls='ls --color=auto'
 ## Workflow
 alias mkdir='mkdir -p -v'
 alias update='sudo apt-get update && sudo apt-get upgrade'
+
 alias gfix='git commit -a --fixup'
 alias gs='git status'
+alias gd='git diff'
 alias gca='git commit -a'
 alias gp='git push'
+
 alias svim='sudo nvim'
 alias cpdir='rsync -ah --info=progress2'
 alias ls='exa'
