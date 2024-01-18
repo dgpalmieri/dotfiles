@@ -1,5 +1,5 @@
 wm.mod: Mod1
 wm.alt: Mod4
 
-gnome.terminal.font: Fira Code Medium 10
+gnome.terminal.font: FiraCode Nerd Font Mono 10
 regolith.look.path: /usr/share/regolith-look/gruvbox
