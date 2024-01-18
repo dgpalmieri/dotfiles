@@ -1,29 +1,50 @@
-return require('packer').startup(function(use)
-    use 'wbthomason/packer.nvim'
+return {
+    {
+        "sainnhe/gruvbox-material",
+        lazy = false,
+        priority = 1000,
+        config = function ()
+            vim.cmd([[colorscheme gruvbox-material]])
+        end,
+    },
 
-    use 'sainnhe/gruvbox-material'
+    "nvim-lualine/lualine.nvim",
+    "nvim-tree/nvim-web-devicons",
 
-    use 'nvim-lualine/lualine.nvim'
-    use 'kyazdani42/nvim-web-devicons'
-    use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+    {
+        'akinsho/bufferline.nvim',
+        version = '*',
+        dependencies = { 'nvim-tree/nvim-web-devicons' }
+    },
 
-    use 'airblade/vim-gitgutter'
+    {
+        'airblade/vim-gitgutter',
+        branch = 'main'
+    },
 
-    use 'tpope/vim-fugitive'
+    "tpope/vim-fugitive",
 
-    use 'sheerun/vim-polyglot'
-    use {
-        'nvim-treesitter/nvim-treesitter',
-        run = ':TSUpdate'
-    }
+    "sheerun/vim-polyglot",
+    {
+        "nvim-treesitter/nvim-treesitter",
+        version = 'v0.9.1',
+        build = ':TSUpdate'
+    },
 
-    use 'scrooloose/nerdtree'
-    use 'unblevable/quick-scope'
-    use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
+    "scrooloose/nerdtree",
+    "unblevable/quick-scope",
+    {
+        'kevinhwang91/nvim-ufo',
+        dependencies = { 'kevinhwang91/promise-async' }
+    },
 
-    use 'scrooloose/nerdcommenter'
+    "scrooloose/nerdcommenter",
 
-    use 'kylechui/nvim-surround'
+    "kylechui/nvim-surround",
 
-    use {'neoclide/coc.nvim', branch = 'release', run = 'yarn install --frozen-lockfile'}
-end)
+    {
+        'neoclide/coc.nvim',
+        branch = 'release',
+        build = 'yarn install --frozen-lockfile'
+    },
+}

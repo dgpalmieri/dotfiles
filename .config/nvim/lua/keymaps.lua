@@ -3,7 +3,7 @@ vim.api.nvim_create_autocmd('BufWritePost', { desc = 'Autoformat Python files', 
 vim.api.nvim_create_autocmd('BufWritePost', { desc = 'Autoformat Terraform files', command = '!terraform fmt %', pattern = '*.tf'})
 
 -- leader configs
-vim.g.mapleader = ' '
+-- leader is set in ../init.lua
 vim.api.nvim_set_keymap('x', '<leader>p', '"_dP', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>a', '<Plug>(coc-codeaction-line)', {})
 vim.api.nvim_set_keymap('x', '<leader>a', '<Plug>(coc-codeaction-selected)', {})
