@@ -25,14 +25,18 @@ return {
     "tpope/vim-fugitive",
 
     "sheerun/vim-polyglot",
+
     {
         "nvim-treesitter/nvim-treesitter",
         version = 'v0.9.1',
         build = ':TSUpdate'
     },
 
+    "nvim-treesitter/nvim-treesitter-context",
+
     "scrooloose/nerdtree",
     "unblevable/quick-scope",
+
     {
         'kevinhwang91/nvim-ufo',
         dependencies = { 'kevinhwang91/promise-async' }
@@ -43,8 +47,21 @@ return {
     "kylechui/nvim-surround",
 
     {
-        'neoclide/coc.nvim',
-        branch = 'release',
-        build = 'yarn install --frozen-lockfile'
+        "nvim-tree/nvim-tree.lua",
+        version = "*",
+        lazy = false,
+        dependencies = {
+            "nvim-tree/nvim-web-devicons",
+        },
+        config = function()
+            require("nvim-tree").setup {}
+        end,
+    },
+
+    'neovim/nvim-lspconfig',
+
+    {
+        'ms-jpq/coq_nvim',
+        branch = 'coq',
     },
 }

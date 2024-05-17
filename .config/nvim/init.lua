@@ -1,7 +1,9 @@
 -- leader needs to be set *before* lazy
 vim.g.mapleader = ' '
 
--- set up lazy.nvim
+vim.g.coq_settings = { auto_start = true }
+
+-- set up lazy.nvim --
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -18,7 +20,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup('plugins')
 
--- end lazy.nvim setup
+-- end lazy.nvim setup --
 
 require('lualine').setup({
     options = {
@@ -30,7 +32,7 @@ require('bufferline').setup{
     options = {
         mode = "tabs",
         themeable = true,
-        diagnostics = "coc",
+        diagnostics = "nvim_lsp",
         buffer_close_icon = "",
         separator_style = "slant",
         diagnostics_indicator = function(count, level, diagnostics_dict, context)
@@ -44,3 +46,4 @@ require("nvim-surround").setup({})
 
 require('options')
 require('keymaps')
+require('lsp')
