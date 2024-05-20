@@ -6,6 +6,7 @@ vim.g.coq_settings = { auto_start = true }
 -- set up lazy.nvim --
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
     "git",
@@ -16,33 +17,12 @@ if not vim.loop.fs_stat(lazypath) then
     lazypath,
   })
 end
+
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup('plugins')
 
 -- end lazy.nvim setup --
-
-require('lualine').setup({
-    options = {
-        theme = "gruvbox-material"
-    }
-})
-
-require('bufferline').setup{
-    options = {
-        mode = "tabs",
-        themeable = true,
-        diagnostics = "nvim_lsp",
-        buffer_close_icon = "",
-        separator_style = "slant",
-        diagnostics_indicator = function(count, level, diagnostics_dict, context)
-          local icon = level:match("error") and " " or " "
-          return " " .. icon .. count
-        end
-    }
-}
-
-require("nvim-surround").setup({})
 
 require('options')
 require('keymaps')

@@ -4,17 +4,40 @@ return {
         lazy = false,
         priority = 1000,
         config = function ()
-            vim.cmd([[colorscheme gruvbox-material]])
+            vim.cmd([[ colorscheme gruvbox-material ]])
         end,
     },
 
-    "nvim-lualine/lualine.nvim",
-    "nvim-tree/nvim-web-devicons",
+    {
+        "nvim-lualine/lualine.nvim",
+        config = function ()
+            require('lualine').setup({
+                options = {
+                    theme = "gruvbox-material",
+                },
+            })
+        end,
+    },
 
     {
         'akinsho/bufferline.nvim',
         version = '*',
-        dependencies = { 'nvim-tree/nvim-web-devicons' }
+        dependencies = { 'nvim-tree/nvim-web-devicons' },
+        config = function ()
+            require('bufferline').setup{
+                options = {
+                    mode = "tabs",
+                    themeable = true,
+                    diagnostics = "nvim_lsp",
+                    buffer_close_icon = "",
+                    separator_style = "slant",
+                    diagnostics_indicator = function(count, level, diagnostics_dict, context)
+                      local icon = level:match("error") and " " or " "
+                      return " " .. icon .. count
+                    end,
+                }
+            }
+        end,
     },
 
     {
@@ -34,7 +57,6 @@ return {
 
     "nvim-treesitter/nvim-treesitter-context",
 
-    "scrooloose/nerdtree",
     "unblevable/quick-scope",
 
     {
@@ -44,7 +66,12 @@ return {
 
     "scrooloose/nerdcommenter",
 
-    "kylechui/nvim-surround",
+    {
+        "kylechui/nvim-surround",
+        config = function()
+            require("nvim-surround").setup({})
+        end,
+    },
 
     {
         "nvim-tree/nvim-tree.lua",
@@ -54,7 +81,11 @@ return {
             "nvim-tree/nvim-web-devicons",
         },
         config = function()
-            require("nvim-tree").setup {}
+            require("nvim-tree").setup {
+                view = {
+                    width = 35,
+                },
+            }
         end,
     },
 
