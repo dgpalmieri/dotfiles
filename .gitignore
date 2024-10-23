@@ -58,6 +58,7 @@
 .pub-cache/
 .pypirc
 .python_history
+.rustup/
 .ssh/
 .sudo_as_admin_successful
 .thunderbird/
