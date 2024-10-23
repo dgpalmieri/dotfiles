@@ -3,6 +3,9 @@ vim.g.mapleader = ' '
 
 vim.g.coq_settings = { auto_start = true }
 
+vim.g.python_host_prog = '/home/dgpalmieri/mambaforge/bin/python3'
+vim.g.python3_host_prog = '/home/dgpalmieri/mambaforge/bin/python3'
+
 -- set up lazy.nvim --
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
