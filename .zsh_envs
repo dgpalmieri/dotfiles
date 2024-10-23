@@ -8,9 +8,10 @@ export EDITOR=/bin/nvim
 ## Starship config
     export STARSHIP_CONFIG=/home/dgpalmieri/.config/starship/starship.toml
 
-## Add local bin and cargo bin to my $PATH
+## Add bins to $PATH
     export PATH=$PATH:/home/dgpalmieri/.local/bin
     export PATH=$PATH:/home/dgpalmieri/.cargo/bin
+    export PATH=$PATH:/home/dgpalmieri/mambaforge/bin
 
 ## Add completions to $fpath
     export fpath=(~/.zsh-plugins/completions ~/.zsh_plugins/zsh-completions/src $fpath)
