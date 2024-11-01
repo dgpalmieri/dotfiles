@@ -41,13 +41,11 @@ return {
     },
 
     {
-        'airblade/vim-gitgutter',
-        branch = 'main'
+        'lewis6991/gitsigns.nvim',
+        config = function()
+            require("gitsigns").setup()
+        end,
     },
-
-    "tpope/vim-fugitive",
-
-    "sheerun/vim-polyglot",
 
     {
         "nvim-treesitter/nvim-treesitter",
@@ -55,7 +53,15 @@ return {
         build = ':TSUpdate'
     },
 
-    "nvim-treesitter/nvim-treesitter-context",
+    {
+        "nvim-treesitter/nvim-treesitter-context",
+        config = function()
+            require("treesitter-context").setup({
+                enable=true,
+                mode='topline',
+            })
+        end,
+    },
 
     "unblevable/quick-scope",
 
@@ -64,7 +70,16 @@ return {
         dependencies = { 'kevinhwang91/promise-async' }
     },
 
-    "scrooloose/nerdcommenter",
+
+    {
+        'numToStr/Comment.nvim',
+        opts = {
+            -- add any options here
+        },
+        config = function()
+            require("Comment").setup({})
+        end,
+    },
 
     {
         "kylechui/nvim-surround",
