@@ -42,9 +42,6 @@
     if [ -z "$(pgrep ssh-agent)" ]; then
        rm -rf /tmp/ssh-*
        eval $(ssh-agent) > /dev/null
-    else
-       export SSH_AGENT_PID=$(pgrep ssh-agent)
-       export SSH_AUTH_SOCK=$(find /tmp/ssh-* -name "agent.*")
     fi
 
     # Add zsh completions functionality
