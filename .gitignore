@@ -4,13 +4,16 @@
 .cache/
 .cargo/
 .conda/
+.config/.gsd-keyboard.settings-ported
 .config/Code/
 .config/FortiClient/
+.config/GNOME-xdg-terminals.list
 .config/Mattermost/
 .config/OpenSCAD/
 .config/QtProject.conf
 .config/Slack/
 .config/Unknown Organization/
+.config/Yubico/
 .config/autostart/
 .config/cef_user_data/
 .config/coc/extensions/
@@ -20,6 +23,7 @@
 .config/gnome-initial-setup-done
 .config/gtk-3.0/
 .config/helm/
+.config/i3/
 .config/ibus/
 .config/mimeapps.list
 .config/monitors.xml
@@ -34,9 +38,12 @@
 .config/pulse/
 .config/rclone/
 .config/regolith2/flags/
+.config/systemd/
 .config/totem/
+.config/ubuntu-xdg-terminals.list
 .config/user-dirs.dirs
 .config/user-dirs.locale
+.config/xdg-terminals.list
 .config/zoom.conf
 .config/zoomus.conf
 .dart-tool/
