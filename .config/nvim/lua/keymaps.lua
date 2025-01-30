@@ -14,3 +14,6 @@ vim.keymap.set('n', 'zM', require('ufo').closeAllFolds)
 
 -- native remaps
 vim.keymap.set('i', 'jk', '<Esc>', { noremap = true })
+
+-- code actions!
+vim.keymap.set({ "v", "n" }, "gf", require("actions-preview").code_actions)

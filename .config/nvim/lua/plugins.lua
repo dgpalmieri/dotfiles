@@ -62,12 +62,14 @@ return {
 
     {
         "nvim-treesitter/nvim-treesitter",
-        version = 'v0.9.1',
+        version = 'v0.9.3',
         build = ':TSUpdate'
     },
 
     {
         "nvim-treesitter/nvim-treesitter-context",
+        -- check for merge https://github.com/nvim-treesitter/nvim-treesitter-context/pull/548
+        commit="f6c99b64111ab1424c8fde3d9a6f3cd08234f8cb",
         config = function()
             require("treesitter-context").setup({
                 enable=true,
@@ -118,6 +120,30 @@ return {
     },
 
     'neovim/nvim-lspconfig',
+
+    'nvim-telescope/telescope-ui-select.nvim',
+
+    {
+        'nvim-telescope/telescope.nvim',
+        branch = '0.1.x',
+        dependencies = { 'nvim-lua/plenary.nvim' },
+        config = function()
+            require("telescope").setup {
+                extensions = {
+                    ["ui-select"] = {
+                        require("telescope.themes").get_dropdown{}
+                    }
+                }
+            }
+        end,
+    },
+
+    {
+        "aznhe21/actions-preview.nvim",
+        config = function()
+            require("actions-preview").setup{}
+        end,
+    },
 
     {
         'ms-jpq/coq_nvim',

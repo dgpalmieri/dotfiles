@@ -1,7 +1,25 @@
 local lsp = require "lspconfig"
 local coq = require "coq"
 
-lsp.basedpyright.setup( coq.lsp_ensure_capabilities() )
+lsp.ruff.setup({
+    capabilities = coq.lsp_ensure_capabilities(),
+    cmd = { "ruff", "server", "--preview" }
+})
+
+lsp.basedpyright.setup({
+    capabilities = coq.lsp_ensure_capabilities(),
+    settings = {
+    basedpyright = {
+      -- Using Ruff's import organizer
+      disableOrganizeImports = true,
+    },
+    analysis = {
+      -- Ignore all files for analysis to exclusively use Ruff for linting
+      ignore = { '*' },
+    },
+  },
+})
+
 lsp.rust_analyzer.setup( coq.lsp_ensure_capabilities() )
 
 
@@ -12,16 +30,6 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
     }                                                                                 
 )
 
-vim.api.nvim_create_autocmd('FileType', {
-    pattern = 'py',
-    callback = function()
-        vim.lsp.start({
-            name = 'basedpyright',
-            cmd = {'basedpyright'},
-            root_dir = vim.fs.dirname(vim.fs.find({'setup.py', 'pyproject.toml'}, { upward = true })[1]),
-        })
-    end,
-})
 
 vim.api.nvim_create_autocmd('FileType', {
     pattern = 'rs',
