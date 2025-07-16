@@ -15,13 +15,21 @@ lsp.basedpyright.setup({
     },
     analysis = {
       -- Ignore all files for analysis to exclusively use Ruff for linting
-      ignore = { '*' },
+      -- ignore = { '*' },
     },
   },
 })
 
 lsp.rust_analyzer.setup( coq.lsp_ensure_capabilities() )
 
+vim.diagnostic.config({
+  virtual_text = true,  -- Make sure this isn't set to false
+  -- or configure it with options:
+  virtual_text = {
+    spacing = 4,
+    prefix = '●',
+  },
+})
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(                 
     vim.lsp.diagnostic.on_publish_diagnostics, {                                      
