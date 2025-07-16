@@ -42,6 +42,7 @@ return {
 
     {
         'lewis6991/gitsigns.nvim',
+        version = '*',
         config = function()
             require("gitsigns").setup{
                 on_attach = function(bufnr)
@@ -62,14 +63,14 @@ return {
 
     {
         "nvim-treesitter/nvim-treesitter",
-        version = 'v0.9.3',
+        -- version = 'v0.9.3',
+        version = '*',
         build = ':TSUpdate'
     },
 
     {
         "nvim-treesitter/nvim-treesitter-context",
-        -- check for merge https://github.com/nvim-treesitter/nvim-treesitter-context/pull/548
-        commit="f6c99b64111ab1424c8fde3d9a6f3cd08234f8cb",
+        -- commit="bf87eaa2c8d5a3c6f3268e07ab8378fa8af0d557",
         config = function()
             require("treesitter-context").setup({
                 enable=true,
@@ -119,7 +120,11 @@ return {
         end,
     },
 
-    'neovim/nvim-lspconfig',
+    {
+        'neovim/nvim-lspconfig',
+        -- version = "1.8.0",
+        version = '*',
+    },
 
     'nvim-telescope/telescope-ui-select.nvim',
 
