@@ -1,6 +1,5 @@
 -- autocmds
 vim.api.nvim_create_autocmd('BufWritePost', { desc = 'Autoformat Python files', command = '!ruff format %', pattern = '*.py'})
-vim.api.nvim_create_autocmd('BufWritePost', { desc = 'Autoformat Terraform files', command = '!terraform fmt %', pattern = '*.tf'})
 vim.api.nvim_create_autocmd('BufWritePost', { desc = 'Autoformat Rust files', command = '!rustfmt %', pattern = '*.rs'})
 
 -- leader configs

@@ -120,12 +120,6 @@ return {
         end,
     },
 
-    {
-        'neovim/nvim-lspconfig',
-        -- version = "1.8.0",
-        version = '*',
-    },
-
     'nvim-telescope/telescope-ui-select.nvim',
 
     {
@@ -146,7 +140,13 @@ return {
     {
         "aznhe21/actions-preview.nvim",
         config = function()
-            require("actions-preview").setup{}
+            require("actions-preview").setup{
+                highlight_command = {
+                    function()
+                        return require("actions-preview.highlight").delta()
+                    end,
+                },
+            }
         end,
     },
 
