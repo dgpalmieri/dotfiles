@@ -1,6 +1,6 @@
 # Environment Variables
 
-export EDITOR=/bin/nvim
+export EDITOR=/home/dgpalmieri/.local/bin/nvim
 
 ## gpg interface
     export GPG_TTY=$(tty)
